@@ -1,0 +1,124 @@
+@charset "UTF-8";
+#wrapper {
+	height: auto;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FCACA1;
+}
+.font1 {
+	font-family: "Helvetica Neue";
+	font-size: 16px;
+	color: #FFF;
+}
+.font2 {
+	font-family: "Helvetica Neue";
+	font-size: 12px;
+	font-style: italic;
+	color: #FFF;
+}
+.font3 {
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+	color: #333;
+}
+.font4 {
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+	color: #333;
+	font-style: normal;
+}
+#sidebar {
+	background-color: #474747;
+	float: left;
+	width: 255px;
+	padding-left: 20px;
+	position: static;
+	padding-right: 20px;
+	height: 1050px;
+}
+#header {
+	width: 1000px;
+	padding: 0px;
+}
+#footer {
+	background-color: #FF9289;
+	width: auto;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+#wrapper #menubar .font3 li strong a:hover {
+	color: #FFF;
+	background-color: #333;
+}
+#wrapper #menubar .font3 li a:hover {
+	color: #FFF;
+	background-color: #333;
+}
+#wrapper #menubar .font3 li:hover ul {
+	visibility: visible;
+}
+#menubar {
+	background-color: #FCACA1;
+	width: auto;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
+#content {
+	background-color: #FFF9F7;
+	width: 665px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 1050px;
+}
+
+body {
+	background-image: url(images/background.png);
+}
+#wrapper #menubar ul {
+	padding: 0px;
+	list-style-type: none;
+	color: #333;
+}
+#wrapper #menubar ul li a {
+	line-height: 30px;
+	text-decoration: none;
+	background-color: #FCACA1;
+	height: 30px;
+	display: block;
+	color: #333;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	width: 158px;
+	padding-left: 40px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFF;
+}
+#wrapper #menubar .font3 li {
+	float: left;
+	position: relative;
+}
+#wrapper #menubar .font3 li ul {
+	position: absolute;
+	visibility: hidden;
+}
+.font5 {
+	font-family: "Helvetica Neue";
+	font-size: 14px;
+}
+.font6 {
+	font-family: "Helvetica Neue";
+	font-size: 14px;
+}

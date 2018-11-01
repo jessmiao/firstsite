@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food in Vancouver - Lunch</title>
+<style type="text/css">
+#wrapper {
+	height: auto;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FCACA1;
+}
+.font1 {
+	font-family: "Helvetica Neue";
+	font-size: 16px;
+	color: #FFF;
+}
+.font2 {
+	font-family: "Helvetica Neue";
+	font-size: 12px;
+	font-style: italic;
+	color: #FFF;
+}
+.font3 {
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+	color: #333;
+}
+.font4 {
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+	color: #333;
+	font-style: normal;
+}
+#sidebar {
+	background-color: #474747;
+	float: left;
+	width: 255px;
+	padding-left: 20px;
+	position: static;
+	padding-right: 20px;
+	height: 950px;
+}
+#header {
+	width: 1000px;
+	padding: 0px;
+}
+#footer {
+	background-color: #FF9289;
+	width: auto;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+#wrapper #menubar .font3 li strong a:hover {
+	color: #FFF;
+	background-color: #333;
+}
+#wrapper #menubar .font3 li a:hover {
+	color: #FFF;
+	background-color: #333;
+}
+#wrapper #menubar .font3 li:hover ul {
+	visibility: visible;
+}
+#menubar {
+	background-color: #FCACA1;
+	width: auto;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
+#content {
+	background-color: #FFF9F7;
+	width: 665px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 950px;
+}
+
+body {
+	background-image: url(../images/background.png);
+}
+#wrapper #menubar ul {
+	padding: 0px;
+	list-style-type: none;
+	color: #333;
+}
+#wrapper #menubar ul li a {
+	line-height: 30px;
+	text-decoration: none;
+	background-color: #FCACA1;
+	height: 30px;
+	display: block;
+	color: #333;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	width: 158px;
+	padding-left: 40px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFF;
+}
+.font5 {
+	font-family: "Helvetica Neue";
+	font-size: 14px;
+}
+#wrapper #menubar .font3 li {
+	float: left;
+	position: relative;
+}
+#wrapper #menubar .font3 li ul {
+	position: absolute;
+	visibility: hidden;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+</script>
+</head>
+<body ng-app="">
+<div id="wrapper">
+  <div id="header"><img src="../images/banner.jpg" alt="banner" width="1000" height="200" title="banner"></div>
+  <div id="menubar">
+    <ul class="font3">
+      <li><a href="../index.html"><strong>Home</strong></a></li>
+      <li><strong><a href="#">About
+        </a>
+        </strong>
+        <ul>
+          <li><strong><a href="../about/vancouver.html">Vancouver</a></strong></li>
+          <li><strong><a href="../about/ourcompany.html">Our Company</a></strong></li>
+          <li><strong><a href="../about/tourism.html">Tourism</a></strong></li>
+        </ul>
+      </li>
+      <li><strong><a href="#">Recent Trips
+        </a>
+        </strong>
+        <ul>
+          <li><strong><a href="../recenttrips/snowyvillage.html">Snowy Village</a></strong></li>
+          <li><strong><a href="../recenttrips/hokkaidoramen.html">Hokkaido Ramen</a></strong></li>
+        </ul>
+      </li>
+      <li><strong><a href="#">Highlights
+        </a>
+        </strong>
+        <ul>
+          <li><strong><a href="../highlights/lunch.html">Lunch</a></strong></li>
+          <li><strong><a href="../highlights/dinner.html">Dinner</a></strong></li>
+          <li><strong><a href="../highlights/desserts.html">Desserts</a></strong></li>
+        </ul>
+      </li>
+      <li><strong><a href="../references.html">References</a></strong></li>
+    </ul>
+  </div>
+  <div id="content">
+    <p class="font3"><em><strong>Lunch</strong></em></p>
+    <div ng-include="'currentrestaurants.html'"></div>
+    <p class="font3"><img src="../images/dinesty.jpg" width="236" height="93" alt="dinesty"></p>
+    <p class="font3"><em>Dinesty Dumpling House</em><br>
+      <em>1719 Robson St, Vancouver, BC V6G 1C9 </em><br>
+      Dinesty is the kind of restaurant you would go to for good Chinese food that is affordable and consistent in terms of quality and taste.  The ambiance of the Dinesty is modern – it&rsquo;s not a mom-and-pop shop. In fact, they&rsquo;re one of the largest Chinese restaurant chains in Metro Vancouver with 5 locations. </p>
+    <p class="font3"><img src="../images/tacofino.jpg" width="236" height="140" alt="tacofino"></p>
+    <p class="font3"><em>Tacofino <span class="font4"><br>
+      </span>1025 Mainland St, Vancouver, BC V6B 5P9 </em><br>
+      Tacofino was born out of a desire to create a unique dining experience by offering quality, freshness and affordability with an environmental and nutritional conscience.  Fast &ldquo;slow&rdquo; food is a concept that really appeals to us, so we make everything from scratch and with love, but without the wait. Their menu is inspired by their world travels, taking the Baja-style taco to another level.    </p>
+    <div ng-include="'pastrestaurants.html'"></div>
+<p class="font3">Myst
+  <br>
+  <a href="https://www.facebook.com/6400myst/?hc_ref=SEARCH" target="_blank" rel="noopener noreferrer">MYST Asian Fusion</a> is a new Taiwanese restaurant in Burnaby, and its massive menu literally has everything you could ever dream of. Ok, maybe not <em>everything</em>, but they offer an extensive variety of Asian favourites both savoury and sweet.</p>
+<p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="sidebar">
+    <p class="font1"> <strong>Recent restaurants we visited:</strong></p>
+  <p class="font2"><img src="../images/snowy village.jpg" alt="snowy village" width="243" height="160" title="snowy village"><span class="font1"><strong>Snowy Village</strong></span><br>
+    <span class="font2">100-1188 Pinetree Way, Coquitlam, BC V3B 0K9</span></p>
+  <p class="font2"><img src="../images/hokkaido ramen.jpg" alt="hokkaido ramen" width="243" height="166" title="hokkaido ramen"><span class="font1"><strong>Hokkaido Ramen Santouka</strong></span><br>
+    <span class="font2">1690 Robson St, Vancouver, BC V6G 1C7</span></p>
+  <p class="font2"><img src="../images/dinesty.jpg" alt="dinesty" width="243" height="121" title="dinesty"><span class="font1"><strong>Dinesty Dumpling House</strong></span><br>
+    <span class="font2">1719 Robson St, Vancouver, BC V6G 1C9</span></p>
+  <p class="font2"><img src="../images/tacofino.jpg" alt="tacofino" width="243" height="140" title="tacofino"><strong><span class="font1">Tacofino</span></strong><br>
+    <span class="font2">1025 Mainland St, Vancouver, BC V6B 5P9 </span></p>
+  <p class="font2">&nbsp;  </p>
+  </div>
+  <div id="footer">
+    <p>&nbsp;</p>
+  <p><img src="../images/logo.png" alt="logo" width="171" height="34" align="absbottom"> <span class="font5">305 Water St, Vancouver, BC, V6B 1B9. Tel: (604) 559-7796. Fax: 250.807.8552. E-mail: <a href="mailto:foodinvancouver@gmail.com">foodinvancouver@gmail.com</a></span></p>
+  </div>
+  
+  
+  
+ 
+</div>
+</body>
+</html>
+
